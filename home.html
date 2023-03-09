@@ -41,9 +41,7 @@
       height: 100%;
       
     }
-    .inactive{
-      display: none;
-    }
+
 
     .navbar-left{
       padding: 0px;
@@ -70,8 +68,8 @@
       font-size: 25px;
       color: var(--green2);
       position: absolute;
-      top: 6%;
-      left: 50%;
+      top: 7%;
+      left: 55%;
       display: flex;
       text-decoration: none;
       list-style: none;
@@ -90,15 +88,44 @@
     .title{
       text-decoration: none;
       color: var(--white);
-      
     }
 
+    .navbar-right-mobile{
+      font-size: 3rem;
+      font-size: 25px;
+      color: var(--green2);
+      position: absolute;
+      top: 10%;
+      left: 80%;
+      text-decoration: none;
+      list-style: none;
+
+    }
+
+    .navbar-right-mobile ul li{
+      margin-left: 10px;
+      list-style: none;
+      
+    }
+    .inactive{
+      display: none;
+    }
+
+    @media (max-width: 1080px){
+      .navbar-right{
+        display: none;
+      }
+      .navbar-right-mobile{
+        display:block;
+      }
+    }
 
   </style>
 </head>
 <body>
   <div class="container">
     <img src="./img2.jpg" alt="screen picture">
+
     <div class="navbar-left">
       <ul>
         <li class="title">
@@ -106,6 +133,7 @@
         </li>
       </ul>
     </div>
+
     <div class="navbar-right">
       <ul>
         <li>
@@ -122,7 +150,7 @@
         </li>
       </ul>
     </div>
-    <div class="mobile-menu inactive">
+    <div class="navbar-right-mobile inactive">
       <ul>
         <li>
           <a class="title" href=>Acerca</a>
