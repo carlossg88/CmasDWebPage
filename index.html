@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CmasD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,55 +34,56 @@
       margin: 0px;
       margin: 0px 0px 0px 0px;
       padding: 0px; 
-      /* box-shadow: 5px 8px 12px black;*/
+     
     }
     .container img{
       width: 100%; /*el 100% de su elemento padre o donde esté contenido*/
       height: 100%;
-      
     }
 
 
     .navbar-left{
-      padding: 0px;
-      font-size: 3rem;
+      padding: 10px;
       font-weight: bold;
-      font-size: 50px;
-      color: var(--green1);
-      position: absolute;
+      font-size: 40px;
+      position:absolute;
       top: 0px;
       left: 0px;
-      display: flex;
-      text-decoration: none;
-      list-style: none;
+      width: 60%;
+      display: block;
+      margin-right: 0px;
+      padding-left: 0px;
 
     }
     .navbar-left ul{
-      margin-top: 20px;
-      padding-left: 0px;
+      display: flex;
+      width: 100%;
+      padding-left: 10px;
     }
     .navbar-left ul li{
-      margin-left: 10px;
-      list-style: none;
       display: flex;
+      width: 100%;
     }
-    
+    .menu{
+      display: none;
+    }
     .navbar-right{
-      font-size: 3rem;
-      font-size: 25px;
+      font-size: 20px;
       color: var(--green2);
-      position: absolute;
-      top: 7%;
+      position: fixed;
+      top: 20px;
       left: 55%;
       display: flex;
       text-decoration: none;
       list-style: none;
+      
 
     }
     .navbar-right ul{
       display: flex;
-      margin-top: 0px;
-      
+      margin-top: 40px;
+      /* background-color: var(--white); */
+      padding-left: 0px;
     }
     .navbar-right ul li{
       margin-left: 10px;
@@ -94,19 +95,17 @@
       text-decoration: none;
       color: var(--white);
       padding-right: 5px;
+      text-shadow: 1px 1px 2px black;
     }
 
     .navbar-right-mobile{
-      font-size: 3rem;
       font-size: 25px;
       color: var(--green2);
       position: absolute;
       top: 10%;
-      left: 80%;
+      left: 70%;
       text-decoration: none;
       list-style: none;
-      margin-right: 10px;
-
     }
 
     .navbar-right-mobile ul li{
@@ -117,13 +116,30 @@
     .inactive{
       display: none;
     }
+    .menuIcon{
+      position: absolute;
+      top: 50px;
+      left: 90%;
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      background-color: white;
+    }
 
     @media (max-width: 1020px){
       .navbar-right{
         display: none;
       }
-      .navbar-right-mobile{
+      /* .navbar-right-mobile{
         display:block;
+      } */
+      .menu {
+        display:block;
+        position: absolute;
+        background-color: var(--white);
+      }
+      .title{
+        font-size: var(--vlg);
       }
     }
 
@@ -131,12 +147,11 @@
 </head>
 <body>
   <div class="container">
-    <img src="./img2.jpg" alt="screen picture">
-
-    <div class="navbar-left">
+    <img src="./img4.jpg" alt="screen picture">
+    <div class="navbar-left title">
       <ul>
         <li class="title">
-          Construcción + Diseño
+          CONSTRUCCIÓN + DISEÑO
         </li>
       </ul>
     </div>
@@ -157,7 +172,10 @@
         </li>
       </ul>
     </div>
+
+
     <div class="navbar-right-mobile inactive">
+
       <ul>
         <li>
           <a class="title" href=>Acerca</a>
@@ -176,6 +194,11 @@
     
   </div>
 
+  <div class="menuIcon">
+    <img src="./icon_menu.svg" alt="menu" class="menu">
+  </div>
+  
+  <script src="./main.js"></script>
 </body>
 </html>
 
