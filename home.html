@@ -50,12 +50,16 @@
       font-size: 50px;
       color: var(--green1);
       position: absolute;
-      top: 10px;
+      top: 0px;
       left: 0px;
       display: flex;
       text-decoration: none;
       list-style: none;
 
+    }
+    .navbar-left ul{
+      margin-top: 20px;
+      padding-left: 0px;
     }
     .navbar-left ul li{
       margin-left: 10px;
@@ -77,6 +81,7 @@
     }
     .navbar-right ul{
       display: flex;
+      margin-top: 0px;
       
     }
     .navbar-right ul li{
@@ -88,6 +93,7 @@
     .title{
       text-decoration: none;
       color: var(--white);
+      padding-right: 5px;
     }
 
     .navbar-right-mobile{
@@ -99,6 +105,7 @@
       left: 80%;
       text-decoration: none;
       list-style: none;
+      margin-right: 10px;
 
     }
 
@@ -111,7 +118,7 @@
       display: none;
     }
 
-    @media (max-width: 1080px){
+    @media (max-width: 1020px){
       .navbar-right{
         display: none;
       }
