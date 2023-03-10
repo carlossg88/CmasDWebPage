@@ -76,8 +76,7 @@
       display: flex;
       text-decoration: none;
       list-style: none;
-      
-
+  
     }
     .navbar-right ul{
       display: flex;
@@ -101,18 +100,25 @@
     .navbar-right-mobile{
       font-size: 25px;
       color: var(--green2);
-      position: absolute;
-      top: 10%;
-      left: 70%;
+      position: fixed;
+      top: 15%;
+      right: 10%;
       text-decoration: none;
       list-style: none;
+      text-align: right;
+      margin-right:10px ;
+      text-shadow: 1px 1px 2px black;
+    }
+    .list{
+      color: white;
+      text-decoration: none;
     }
 
     .navbar-right-mobile ul li{
       margin-left: 10px;
       list-style: none;
-      
     }
+
     .inactive{
       display: none;
     }
@@ -130,9 +136,6 @@
       .navbar-right{
         display: none;
       }
-      /* .navbar-right-mobile{
-        display:block;
-      } */
       .menu {
         display:block;
         position: absolute;
@@ -147,7 +150,9 @@
 </head>
 <body>
   <div class="container">
-    <img src="./img4.jpg" alt="screen picture">
+    <img class="BackgroundImage" src="./img4.jpg" alt="screen picture">
+
+    
     <div class="navbar-left title">
       <ul>
         <li class="title">
@@ -173,25 +178,23 @@
       </ul>
     </div>
 
-
     <div class="navbar-right-mobile inactive">
-
       <ul>
         <li>
-          <a class="title" href=>Acerca</a>
+          <a class="list" href=>Acerca</a>
         </li>
         <li>
-          <a class="title" href=>Servicios</a>
+          <a class="list" href=>Servicios</a>
         </li>
         <li>
-          <a class="title" href=>Proyectos</a>
+          <a class="list" href=>Proyectos</a>
         </li>
         <li>
-          <a class="title" href=>Contacto</a>
+          <a class="list" href=>Contacto</a>
         </li>
       </ul>
     </div>
-    
+  
   </div>
 
   <div class="menuIcon">
