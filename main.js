@@ -8,10 +8,11 @@ contador = 0;
 function toggleMobileMenu(){
   
   MobileMenu.classList.toggle('inactive');
-  BackgroundImage.setAttribute('src', './img'+contador+'.jpg');
-  contador = contador +1;
-  console.log(contador);
-  if (contador == 5){
-    contador=0
-  }
+
+  // BackgroundImage.setAttribute('src', './img'+contador+'.jpg');
+  // contador = contador +1;
+  // console.log(contador);
+  // if (contador == 5){
+  //   contador=0
+  // }
 }
