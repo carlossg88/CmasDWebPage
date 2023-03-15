@@ -25,9 +25,17 @@ body {
   padding: 0px; 
  
 }
-.container img{
-  /* width: 100%; el 100% de su elemento padre o donde esté contenido */
-  height: 100%;
+.BackgroundImage{
+  width: 100%; /*el 100% de su elemento padre o donde esté contenido*/
+  /* height: 100%; */
+}
+
+.logo{
+  width: 15%;
+  /* height: 10%; */
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 
@@ -35,33 +43,37 @@ body {
   padding: 10px;
   font-weight: bold;
   font-size: 30px;
-  position:fixed;
+  position:absolute;
   top: 0px;
-  left: 0px;
+  left: 17%;
   width: 60%;
   display: block;
   margin-right: 0px;
   padding-left: 0px;
-
+}
+.navbar-left a{
+  text-decoration: none;
+  
 }
 .navbar-left ul{
-  display: flex;
   width: 100%;
   padding-left: 10px;
+  list-style: none;
 }
-.navbar-left ul li{
-  display: flex;
-  width: 100%;
+
+.navbar-left ul li:nth-child(2){
+  font-size: 50px;
 }
+
 .menu{
   display: none;
 }
 .navbar-right{
   font-size: 15px;
   color: var(--green2);
-  position: fixed;
+  position: absolute;
   top: 20px;
-  left: 55%;
+  left: 70%;
   display: flex;
   text-decoration: none;
   list-style: none;
@@ -70,7 +82,6 @@ body {
 .navbar-right ul{
   display: flex;
   margin-top: 40px;
-  /* background-color: var(--white); */
   padding-left: 0px;
 }
 .navbar-right ul li{
@@ -84,12 +95,31 @@ body {
   color: var(--white);
   padding-right: 5px;
   text-shadow: 1px 1px 2px black;
+  
+}
+.title-black{
+  color: var(--black);
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.title-gray{
+  color: var(--gray1);
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.title2{
+  /* background-color: var(--green1); */
+}
+.bold{
+  font-weight: bold;
 }
 
 .navbar-right-mobile{
   font-size: 25px;
   color: var(--green2);
-  position: fixed;
+  position: absolute;
   top: 15%;
   right: 10%;
   text-decoration: none;
@@ -125,31 +155,47 @@ body {
 /* ABOUT */
 
 .container2{
-
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 200px;
 }
 .center-information{
-  display: block;
+  text-align: center;
 }
 
 .paragraph{
   text-align: justify;
-  /* margin: 50px; */
-  /* width: 300px; */
 }
 .paragraph2{
   text-align: justify;
-  margin: 50px;
-  width: 300px;
+  margin: 0px 50px 0px 50px;
 }
 
-.image-background{
+
+
+
+.profile-image{
   background-color: #e9e4e8;
   width: 430px;
   height: 100%;
+  margin-top: 40px;
 }
 
+
+.WhyUs{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-around;
+}
+.box{
+  text-align: center;
+  color: var(--yellow2);
+  /* font-weight: bold; */
+}
+.box p{
+  text-align: justify;
+  margin: 0 10px 0 10px;
+}
 
 @media (max-width: 1020px){
   .navbar-right{
