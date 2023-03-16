@@ -110,7 +110,7 @@ body {
 }
 
 .title2{
-  /* background-color: var(--green1); */
+  background-color: none;
 }
 .bold{
   font-weight: bold;
