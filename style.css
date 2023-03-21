@@ -157,7 +157,6 @@ body {
   /* background-color: white; */
 }
 
-
 /* ABOUT */
 
 .container2{
@@ -177,14 +176,12 @@ body {
   margin: 0px 50px 0px 50px;
 }
 
-
 .profile-image{
   background-color: #e9e4e8;
   width: 430px;
   height: 100%;
   margin-top: 40px;
 }
-
 
 .WhyUs{
   display: grid;
@@ -212,6 +209,8 @@ body {
 .card-service{
   padding: 10px 20px 10px 0;
   text-align: justify;
+  /* border: 3px solid var(--gray2); */
+  border-radius: 10px;
 }
 
 .card-service img{
@@ -220,9 +219,29 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  background-color: var(--white);
 }
 
+.card-service p{
+  background-color: var(--white);
+}
+
+
+/* PROJECTS  */
+
+.card-container-projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,240px);
+  gap: 100px;
+  place-content: center;
+}
+.card-project{
+  background-color: white;
+}
+
+.card-project img{
+  width: 300px;
+}
 
 @media (max-width: 1020px){
   .navbar-right{

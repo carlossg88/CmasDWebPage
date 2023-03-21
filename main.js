@@ -6,7 +6,5 @@ menuHamIcon.addEventListener('click',toggleMobileMenu);
 
 contador = 0;
 function toggleMobileMenu(){
-  
   MobileMenu.classList.toggle('inactive');
-
 }
