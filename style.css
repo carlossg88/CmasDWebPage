@@ -230,9 +230,10 @@ body {
 /* PROJECTS  */
 
 .card-container-projects{
+  margin-left: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,240px);
-  gap: 100px;
+  grid-template-columns: repeat(auto-fill,280px);
+  gap: 50px;
   place-content: center;
 }
 .card-project{
@@ -241,6 +242,8 @@ body {
 
 .card-project img{
   width: 300px;
+  height: 320px;
+  object-fit: cover;
 }
 
 @media (max-width: 1020px){
