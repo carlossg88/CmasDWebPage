@@ -246,6 +246,23 @@ body {
   object-fit: cover;
 }
 
+/* CONTACT*/
+
+.contact-card{
+
+}
+
+.contact-icon{
+  width: 50px;
+  justify-content: left;
+  object-fit:contain;
+  
+
+}
+.contact-card-div{
+  display: flex;
+}
+
 @media (max-width: 1020px){
   .navbar-right{
     display: none;
