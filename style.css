@@ -157,6 +157,25 @@ body {
   /* background-color: white; */
 }
 
+.footer{
+  display: flex;
+  background-color: var(--green2);
+  justify-content: center;
+}
+.logo-footer{
+  width: 15%;
+  height: 15%;
+  position: relative;
+  top: 4%;
+  left: 3%;
+  padding: 10px
+}
+.paragraph-footer{
+  margin-top: 0.5%;
+  margin-left: 3%;
+}
+
+
 /* ABOUT */
 
 .container2{
@@ -253,11 +272,13 @@ body {
   width: 50px;
   justify-content: left;
   object-fit:contain;
+  padding-right: 10px;
   
 
 }
 .contact-card-div{
   display: flex;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1020px){
