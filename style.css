@@ -284,6 +284,12 @@ body {
 .justified{
   text-align: justify;
 }
+.ImgRoll{
+  width: 100px;
+}
+.imgroll img{
+  width: 100%;
+}
 
 /* CONTACT*/
 
@@ -317,8 +323,22 @@ body {
 
 @media (max-width: 640px){
 
-  .navbar-left ul li:nth-child(2){
+  .logo{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+  .navbar-left{
     font-size: 10px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-weight: bold;
+  }
+
+
+  .navbar-left ul li:nth-child(2){
+    font-size: 20px;
   }
   .title-gray{
     font-size: var(--md);
@@ -355,5 +375,13 @@ body {
     grid-template-columns: repeat(auto-fill,280px);
     /* gap: 50px; */
     place-content: center;
+  }
+  .mapa{
+    width: 330px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .paragraph2{
+    margin: 0px 10px 0 10px;
   }
 }
