@@ -280,16 +280,32 @@ body {
   width: 300px;
   height: 320px;
   object-fit: cover;
+  cursor: pointer;
 }
 .justified{
   text-align: justify;
 }
 .ImgRoll{
-  width: 100px;
+  background-color: #000000;
+  width: 800px;
+  height: 100px;
+  position: fixed;
+  top:20%;
+  left:20%;
 }
-.imgroll img{
+
+.ImgRoll img{
   width: 100%;
 }
+.close-Icon{
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  width: 40px;
+  cursor: pointer;
+  
+}
+
 
 /* CONTACT*/
 
