@@ -47,7 +47,7 @@ body {
   top: 0px;
   left: 17%;
   width: 60%;
-  display: block;
+  /* display: block; */
   margin-right: 0px;
   padding-left: 0px;
 }
@@ -252,7 +252,7 @@ body {
 .card-service img{
   width: 100px;
   /* height: 50px; */
-  display: block;
+  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   background-color: var(--white);
@@ -281,21 +281,36 @@ body {
   height: 320px;
   object-fit: cover;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-project img:hover{
+  transform: scale(1.2);
 }
 .justified{
   text-align: justify;
 }
 .ImgRoll{
-  background-color: #000000;
-  width: 800px;
-  height: 100px;
   position: fixed;
-  top:20%;
-  left:20%;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  left:0;
+  width: 100%;
+  height: auto;
+  /* display: grid; */
+  justify-content: space-around;
+  align-items: center;
+  /* display:k flex; */
 }
 
+
 .ImgRoll img{
-  width: 100%;
+  width: 90%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  
 }
 .close-Icon{
   position: absolute;
@@ -304,6 +319,32 @@ body {
   width: 40px;
   cursor: pointer;
   
+  
+}
+
+.full-img{
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(0,0,0,0.8) ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.full-img img{
+  width: 80%;
+  max-width: 90%;
 }
 
 
