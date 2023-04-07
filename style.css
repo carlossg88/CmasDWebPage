@@ -441,4 +441,10 @@ body {
   .paragraph2{
     margin: 0px 10px 0 10px;
   }
+  .full-img{
+    width: 100%;
+  }
+  .full-img img{
+     width: 100%;
+  }
 }
