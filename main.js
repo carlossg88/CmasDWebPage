@@ -178,7 +178,7 @@ function NextImg(){
     if (pos==11){
       pos=1
     }
-  }
+  }Ñ
   if (projectImage==9){
     fullImg.src = './project_images/A9-'+pos+'.jpg'
     console.log(fullImg.src)
