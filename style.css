@@ -339,12 +339,36 @@ body {
   top: 5%;
   right: 5%;
   font-size: 30px;
-  color: #FFFFFF;
+  color: var(--green1);
   cursor: pointer;
+  border: 2px solid var(--green1);
+  padding: 0px 7px 0px 7px;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: bold;
 }
-.full-img img{
+.image-zoom{
   width: 80%;
   max-width: 90%;
+}
+
+.next-icon{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  width: 4%;
+  border: 2px solid var(--green1);
+  background-color: white;
+  cursor: pointer;
+}
+.back-icon{
+  position:absolute;
+  top: 50%;
+  left: 10%;
+  width: 4%;
+  border: 2px solid var(--green1);
+  background-color: white;
+  cursor: pointer;
 }
 
 
