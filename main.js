@@ -11,24 +11,6 @@ function toggleMobileMenu(){
 
 
 
-// function for open floating image 
-// const menuOpen = document.querySelector('.card-project');
-// const imgRoll = document.querySelector('.ImgRoll');
-
-// menuOpen.addEventListener('click',OpenImage);
-// function OpenImage(){
-//   imgRoll.classlist.toggle('inactive')
-// }
-
-
-
-// function for close floating image
-// const menuClose = document.querySelector('.close-Icon');
-// const imgRoll = document.querySelector('.ImgRoll');
-// menuClose.addEventListener('click',CloseImage);
-// function CloseImage(){
-//   imgRoll.classList.add('inactive')
-// }
 var projectImage =0
 var pos=1
 

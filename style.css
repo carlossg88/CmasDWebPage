@@ -26,7 +26,7 @@ body {
 .BackgroundImage{
   
   width: 100%;
-  height: 700px;
+  height: 790px;
   object-fit: cover;
 }
 
@@ -126,24 +126,30 @@ body {
   font-size: 25px;
   color: var(--green2);
   position: absolute;
-  top: 9%;
-  right: 6%;
+  top: 11%;
+  right: 1%;
   text-decoration: none;
   list-style: none;
   text-align: right;
   margin-right:10px ;
   padding-left: 0px;
   /* text-shadow: 1px 1px 2px black; */
+  /* border: 1px solid black; */
+  /* margin-top: 15px; */
 
 }
 
 .navbar-right-mobile ul{
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
 }
 .navbar-right-mobile li{
   margin-right: 10px;
   font-weight: bold;
   margin-left: 0px;
+  border-bottom: 1px dotted black;
 }
 .list{
   color: black;
@@ -312,15 +318,7 @@ body {
 
   
 }
-.close-Icon{
-  position: absolute;
-  top: 10%;
-  right: 1%;
-  width: 40px;
-  cursor: pointer;
-  
-  
-}
+
 
 .full-img{
   width: 100%;
@@ -344,7 +342,7 @@ body {
   border: 2px solid var(--green1);
   padding: 0px 7px 0px 7px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
   font-weight: bold;
 }
 .image-zoom{
@@ -428,7 +426,9 @@ body {
     
   }
   .navbar-right-mobile{
-    background-color: var(--white);
+    background-color: rgba(0, 0, 0, 0.1) ;
+    
+
   }
   .paragraph-footer{
     text-align: center;
@@ -490,5 +490,6 @@ body {
     font-size: 15px;
     width: 50%;
   }
+
 
 }
