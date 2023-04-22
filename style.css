@@ -485,6 +485,13 @@ body {
     top: 20%;
     right: 5%;
     font-size: 30px;
+
+  }
+  .image-zoom{
+    height: 300px;
+    object-fit: cover;
+    
+
   }
   .email{
     font-size: 15px;
