@@ -69,7 +69,7 @@ body {
   display: none;
 }
 .navbar-right{
-  font-size: 15px;
+  font-size: 20px;
   color: var(--green2);
   position: absolute;
   top: 20px;
@@ -185,7 +185,9 @@ body {
   position: relative;
   top: 4%;
   left: 3%;
-  padding: 10px
+  padding: 10px;
+  /* background-color: white; */
+  
 }
 .paragraph-footer{
   /* margin-top: 0.5%; */
@@ -199,6 +201,11 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 200px;
+}
+
+.container2 h2{
+  text-align: center;
+  font-size: 30px;
 }
 .center-information{
   text-align: center;
@@ -222,6 +229,7 @@ body {
   height: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
+  border-radius: 50%;
 }
 
 .WhyUs{
@@ -271,6 +279,53 @@ body {
 
 /* PROJECTS  */
 
+.container-Design{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,280px);
+  gap: 50px;
+  place-content: center;
+  
+}
+
+.Container-Design-Architecture img{
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+.container-Architecture{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+
+.container-Arqchitecture h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.container-CivilEng{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 200px;
+}
+
+.container-CivilEng h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+
 .card-container-projects{
   margin-left: 0px;
   display: grid;
@@ -309,16 +364,12 @@ body {
   /* display:k flex; */
 }
 
-
 .ImgRoll img{
   width: 90%;
   max-width: 100%;
   justify-content: center;
   align-items: center;
-
-  
 }
-
 
 .full-img{
   width: 100%;
@@ -371,7 +422,6 @@ body {
 
 
 /* CONTACT*/
-
 
 .contact-icon{
   width: 50px;

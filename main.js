@@ -213,3 +213,14 @@ function NextImg(){
     
 }
 
+const Architecture = document.querySelector('.Container-Design-Architecture');
+const ContainerAchitecture = document.querySelector('.container-Architecture');
+
+Architecture.addEventListener('click', ShowArchiture);
+
+function ShowArchiture(){
+  console.log('click')
+  ContainerAchitecture.classList.toggle('inactive');
+}
+
+
