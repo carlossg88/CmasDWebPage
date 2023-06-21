@@ -214,13 +214,24 @@ function NextImg(){
 }
 
 const Architecture = document.querySelector('.Container-Design-Architecture');
-const ContainerAchitecture = document.querySelector('.container-Architecture');
+const CivilEng = document.querySelector('.Container-Design-CivilEng')
+
+const ContainerAchitectureProy = document.querySelector('.container-Architecture');
+const ContainerCivilEngProy = document.querySelector('.container-CivilEng')
 
 Architecture.addEventListener('click', ShowArchiture);
+CivilEng.addEventListener('click',ShowCivilEng)
 
 function ShowArchiture(){
   console.log('click')
-  ContainerAchitecture.classList.toggle('inactive');
+  ContainerAchitectureProy.classList.toggle('inactive');
+  ContainerCivilEngProy.classList.add('inactive')
 }
+function ShowCivilEng(){
+  console.log('click')
+  ContainerAchitectureProy.classList.add('inactive');
+  ContainerCivilEngProy.classList.toggle('inactive')
+}
+
 
 
