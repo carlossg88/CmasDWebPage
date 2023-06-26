@@ -119,8 +119,6 @@ body {
   /* font-weight: bold; */
 }
 
-
-
 .bold{
   font-weight: bold;
 }
@@ -139,21 +137,21 @@ body {
   /* text-shadow: 1px 1px 2px black; */
   /* border: 1px solid black; */
   /* margin-top: 15px; */
-
 }
 
 .navbar-right-mobile ul{
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  
 }
+
 .navbar-right-mobile li{
   margin-right: 10px;
   font-weight: bold;
   margin-left: 0px;
   border-bottom: 1px dotted black;
 }
+
 .list{
   color: black;
   text-decoration: none;
@@ -167,6 +165,7 @@ body {
 .inactive{
   display: none;
 }
+
 .menuIcon{
   position: absolute;
   top: 57px;
@@ -185,6 +184,7 @@ body {
   font-size: 20px;
   font-weight: normal;
 }
+
 .logo-footer{
   width: 15%;
   height: 15%;
@@ -193,13 +193,12 @@ body {
   left: 3%;
   padding: 10px;
   /* background-color: white; */
-  
 }
+
 .paragraph-footer{
   margin-top: 5px;
   margin-left: 3%;
 }
-
 
 /* ABOUT */
 
@@ -221,6 +220,14 @@ body {
   margin-top: 90px;
 }
 
+.profile-container{
+  display: flex;
+  
+}
+.Profile{
+  padding: 0 25px;
+}
+
 .paragraph{
   text-align: justify;
 }
@@ -231,8 +238,8 @@ body {
 
 .profile-image{
   background-color: #e9e4e8;
-  width: 430px;
-  height: 100%;
+  width: 350px;
+  height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 50%;
