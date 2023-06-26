@@ -9,9 +9,38 @@ function toggleMobileMenu(){
   MobileMenu.classList.toggle('inactive');
 }
 
+
+
+
+// FUNCTIONS FOR PROJECTS
+
+// SELECTING ARCHITECTURE OR CIVIL ENGINEERING PROJECTS
+
+const Architecture = document.querySelector('.Container-Design-Architecture');
+const CivilEng = document.querySelector('.Container-Design-CivilEng');
+
+const ContainerAchitectureProy = document.querySelector('.container-Architecture');
+const ContainerCivilEngProy = document.querySelector('.container-CivilEng');
+
+Architecture.addEventListener('click', ShowArchiture);
+CivilEng.addEventListener('click',ShowCivilEng);
+
+function ShowArchiture(){
+  console.log('click')
+  ContainerAchitectureProy.classList.toggle('inactive');
+  ContainerCivilEngProy.classList.add('inactive');
+}
+function ShowCivilEng(){
+  console.log('click')
+  ContainerAchitectureProy.classList.add('inactive');
+  ContainerCivilEngProy.classList.toggle('inactive');
+}
+
+
+// OPENING OR CLOSING IMAGES ON PROJECTS
+
 var projectImage =0
 var pos=1
-
 
 const FullImgBox = document.getElementById("fullImgBox")
 fullImg = document.getElementById("fullImg")
@@ -349,25 +378,20 @@ function PreviousImg(){
     
 }
 
-const Architecture = document.querySelector('.Container-Design-Architecture');
-const CivilEng = document.querySelector('.Container-Design-CivilEng')
 
-const ContainerAchitectureProy = document.querySelector('.container-Architecture');
-const ContainerCivilEngProy = document.querySelector('.container-CivilEng')
+// FUNCTIONS FOR ABOUT
 
-Architecture.addEventListener('click', ShowArchiture);
-CivilEng.addEventListener('click',ShowCivilEng)
+const SeeMoreArchitect = document.querySelector('#See-More-Architect');
+const ArchitectureParagraph = document.querySelector('#ArchitectureParagraph');
+const paragraph1 = document.querySelector('#paragraph1Architecture')
 
-function ShowArchiture(){
-  console.log('click')
-  ContainerAchitectureProy.classList.toggle('inactive');
-  ContainerCivilEngProy.classList.add('inactive')
+SeeMoreArchitect.addEventListener('click',toggleMoreArchitect)
+
+function toggleMoreArchitect(){
+  ArchitectureParagraph.classList.remove('inactive')
+  paragraph1.classList.add('inactive')
 }
-function ShowCivilEng(){
-  console.log('click')
-  ContainerAchitectureProy.classList.add('inactive');
-  ContainerCivilEngProy.classList.toggle('inactive')
-}
+
 
 
 

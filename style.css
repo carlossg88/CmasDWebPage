@@ -222,7 +222,6 @@ body {
 
 .profile-container{
   display: flex;
-  
 }
 .Profile{
   padding: 0 25px;
@@ -233,7 +232,22 @@ body {
 }
 .paragraph2{
   text-align: justify;
-  margin: 0px 50px 0px 50px;
+  /* margin: 0px 50px 0px 50px; */
+}
+
+#See-More-Architect{
+  color: var(--green1);
+  cursor: pointer;
+  font-weight: bold;
+}
+#See-Less-Architect{
+  color: var(--green1);
+  cursor: pointer;
+  font-weight: bold;
+}
+#See-More-Engineer{
+  color: var(--green1);
+  cursor: pointer;
 }
 
 .profile-image{
@@ -523,7 +537,10 @@ body {
   .navbar-right-mobile{
     background-color: rgba(0, 0, 0, 0.1) ;
     
+  }
 
+  .profile-container{
+    display: block;
   }
   .paragraph-footer{
     text-align: center;
