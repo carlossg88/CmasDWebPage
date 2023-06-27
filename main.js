@@ -379,18 +379,18 @@ function PreviousImg(){
 }
 
 
-// FUNCTIONS FOR ABOUT
+// // FUNCTIONS FOR ABOUT
 
-const SeeMoreArchitect = document.querySelector('#See-More-Architect');
-const ArchitectureParagraph = document.querySelector('#ArchitectureParagraph');
-const paragraph1 = document.querySelector('#paragraph1Architecture')
+// const SeeMoreArchitect = document.querySelector('#See-More-Architect');
+// const ArchitectureParagraph = document.querySelector('#ArchitectureParagraph');
+// const paragraph1 = document.querySelector('#paragraph1Architecture')
 
-SeeMoreArchitect.addEventListener('click',toggleMoreArchitect)
+// SeeMoreArchitect.addEventListener('click',toggleMoreArchitect)
 
-function toggleMoreArchitect(){
-  ArchitectureParagraph.classList.remove('inactive')
-  paragraph1.classList.add('inactive')
-}
+// function toggleMoreArchitect(){
+//   ArchitectureParagraph.classList.remove('inactive')
+//   paragraph1.classList.add('inactive')
+// }
 
 
 

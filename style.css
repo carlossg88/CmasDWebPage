@@ -248,7 +248,16 @@ body {
 #See-More-Engineer{
   color: var(--green1);
   cursor: pointer;
+  font-weight: bold;
 }
+#See-Less-Engineer{
+  color: var(--green1);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
 
 .profile-image{
   background-color: #e9e4e8;
@@ -542,6 +551,8 @@ body {
   .profile-container{
     display: block;
   }
+
+
   .paragraph-footer{
     text-align: center;
   }
