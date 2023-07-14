@@ -16,7 +16,12 @@ body {
 
 }
 
-
+h1{
+  font-size: var(--vlg);
+}
+h2{
+  font-size: var(--lg);
+}
 .container{
   width: 100%;
   position: relative;
