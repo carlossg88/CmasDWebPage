@@ -9,9 +9,6 @@ function toggleMobileMenu(){
   MobileMenu.classList.toggle('inactive');
 }
 
-
-
-
 // FUNCTIONS FOR PROJECTS
 
 // SELECTING ARCHITECTURE OR CIVIL ENGINEERING PROJECTS
@@ -61,77 +58,7 @@ function openFullImg(reference,reference2,reference3){
   pos = 1
   NumbImages = reference2
 
-  
-  // if (reference == 1){
-  //   projectImage=1
-  //   fullImg.src = './project_images/A1-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==2){
-  //   projectImage=2
-  //   fullImg.src = './project_images/A2-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==3){
-  //   projectImage=3
-  //   fullImg.src = './project_images/A3-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==4){
-  //   projectImage=4
-  //   fullImg.src = './project_images/A4-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==5){
-  //   projectImage=5
-  //   fullImg.src = './project_images/A5-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==6){
-  //   projectImage=6
-  //   fullImg.src = './project_images/A6-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==7){
-  //   projectImage=7
-  //   fullImg.src = './project_images/A7-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==8){
-  //   projectImage=8
-  //   fullImg.src = './project_images/A8-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==9){
-  //   projectImage=9
-  //   fullImg.src = './project_images/A9-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==10){
-  //   projectImage=10
-  //   fullImg.src = './project_images/A10-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==11){
-  //   projectImage=11
-  //   fullImg.src = './project_images/A11-1.jpeg'
-  //   pos=1
-  // }
-  // if (reference==12){
-  //   projectImage=12
-  //   fullImg.src = './project_images/A12-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==13){
-  //   projectImage=13
-  //   fullImg.src = './project_images/A13-1.jpg'
-  //   pos=1
-  // }
-  // if (reference==14){
-  //   projectImage=14
-  //   fullImg.src = './project_images/A14-1.jpg'
-  //   pos=1
-  // }
+
 }
 
 function NextImg(){
@@ -142,117 +69,6 @@ function NextImg(){
   }
   fullImg.src = './project_images/'+classifcation+projectImage+'-'+pos+'.jpg'
 
-  // if (projectImage==1){
-    
-  //   if (pos>36){
-  //     pos=1
-  //   }
-  //   console.log(fullImg.src)
-  //   fullImg.src = './project_images/A1-'+pos+'.jpg'
-  //   console.log(pos)
-  // }
-
-  // if (projectImage==2){
-  //   if (pos>44){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A2-'+pos+'.jpg'
-  // }
-
-  // if (projectImage==3){
-  //   if (pos>9){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A3-'+pos+'.jpg'
-  // }
-
-  // if (projectImage==4){
-  //   if (pos>16){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A4-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==5){
-  //   if (pos>15){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A5-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==6){
-  //   if (pos>28){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A6-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==7){
-  //   if (pos>16){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A7-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==8){
-  //   if (pos>11){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A8-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==9){
-  //   if (pos>15){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A9-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==10){
-  //   if (pos>7){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A10-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==11){
-  //   if (pos>5){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A11-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==12){
-  //   if (pos>12){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A12-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==13){
-  //   if (pos>28){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A13-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
-
-  // if (projectImage==14){
-  //   if (pos>25){
-  //     pos=1
-  //   }
-  //   fullImg.src = './project_images/A14-'+pos+'.jpg'
-  //   console.log(fullImg.src)
-  // }
     
 }
 
@@ -263,135 +79,68 @@ function PreviousImg(){
     pos=NumbImages
   }
   fullImg.src = './project_images/'+classifcation+projectImage+'-'+pos+'.jpg'
-
-  // if (projectImage==1){
-    
-  //   if (pos<1){
-  //     pos=36
-  //   }
-  //   console.log('posicion '+pos)
-  //   fullImg.src = './project_images/A1-'+pos+'.jpg'
-  //   console.log('imagen de proyecto'+projectImage)
-  //   console.log('Source'+ fullImg.src)
-  // }
-  // if (projectImage==2){
-    
-  //   if (pos<1){
-  //     pos=44
-  //   }
-  //   fullImg.src = './project_images/A2-'+pos+'.jpg'
-  // }
-  // if (projectImage==3){
-  //   if (pos<1){
-  //     pos=9
-  //   }
-  //   fullImg.src = './project_images/A3-'+pos+'.jpg'
-  // }
-  // if (projectImage==4){
-  //   console.log(fullImg.src)
-    
-  //   if (pos<1){
-  //     pos=16
-  //   }
-  //   fullImg.src = './project_images/A4-'+pos+'.jpg'
-  // }
-
-  // if (projectImage==5){
-  //   console.log(fullImg.src)
-    
-  //   if (pos<1){
-  //     pos=15
-  //   }
-  //   fullImg.src = './project_images/A5-'+pos+'.jpg'
-  // }
-  // if (projectImage==6){
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=28
-  //   }
-  //   fullImg.src = './project_images/A6-'+pos+'.jpg'
-  // }
-  // if (projectImage==7){
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=16
-  //   }
-  //   fullImg.src = './project_images/A7-'+pos+'.jpg'
-  // }
-  // if (projectImage==8){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=11
-  //   }
-  //   fullImg.src = './project_images/A8-'+pos+'.jpg'
-  // }
-  // if (projectImage==9){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=15
-  //   }
-  //   fullImg.src = './project_images/A9-'+pos+'.jpg'
-  // }
-  // if (projectImage==10){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=7
-  //   }
-  //   fullImg.src = './project_images/A10-'+pos+'.jpg'
-  // }
-  // if (projectImage==11){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=5
-  //   }
-  //   fullImg.src = './project_images/A11-'+pos+'.jpg'
-  // }
-
-  // if (projectImage==12){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=12
-  //   }
-  //   fullImg.src = './project_images/A12-'+pos+'.jpg'
-  // }
-  // if (projectImage==13){
-    
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=28
-  //   }
-  //   fullImg.src = './project_images/A13-'+pos+'.jpg'
-  // }
-  // if (projectImage==14){
-  //   console.log(fullImg.src)
-  //   if (pos<1){
-  //     pos=25
-  //   }
-  //   fullImg.src = './project_images/A14-'+pos+'.jpg'
-  // }
-  
-    
 }
 
+// CREATING AND OPENING IMAGES FOR CONSTRUCTION
 
-// // FUNCTIONS FOR ABOUT
+const Constructions = document.querySelector('.Container-Design-Construction');
+Constructions.addEventListener('click',createConstruction);
+const cardContainer = document.getElementById('ccp')
+const containerConstruction = document.querySelector('.container-Construction')
+ 
 
-// const SeeMoreArchitect = document.querySelector('#See-More-Architect');
-// const ArchitectureParagraph = document.querySelector('#ArchitectureParagraph');
-// const paragraph1 = document.querySelector('#paragraph1Architecture')
+// I'm creating 3 construction database 
 
-// SeeMoreArchitect.addEventListener('click',toggleMoreArchitect)
 
-// function toggleMoreArchitect(){
-//   ArchitectureParagraph.classList.remove('inactive')
-//   paragraph1.classList.add('inactive')
-// }
+  var createdConstruction = 0
 
+  function createConstruction(){
+
+    containerConstruction.classList.toggle('inactive')
+
+    if (createdConstruction==0){
+
+      let a ='onclick'
+      let b = ','
+      let c = 'openFullImg('
+      let d = '1,'
+      let e = '14,'
+      let f='"O")'
+      let g = '"'
+      console.log(b+c+d+e+f)
+      
+      // from here I need to create a for cicle 
+      let newCardProject = document.createElement('div');
+      newCardProject.classList.add('card-project');
+      
+      cardContainer.appendChild(newCardProject);
+
+      let Newimage = document.createElement('img');
+      Newimage.src = 'project_images/O1-1G.jpg';
+      Newimage.setAttribute('onmouseover','src="project_images/O1-1.jpg"');
+      Newimage.setAttribute('onmouseout','src="project_images/O1-1G.jpg"');
+      Newimage.setAttribute(a , c+d+e+f)
+      
+      // Newimage.onmouseover = 'this.src="./project_images/O1-1.jpg"';
+      // Newimage.onmouseout = 'this.src="./project_images/O1-1G.jpg"';
+      
+      newCardProject.appendChild(Newimage);
+      
+
+      let newP2 = document.createElement('p')
+      newP2.classList.add('bold');
+      newP2.innerText = 'Casa de doña Vilma';
+      newCardProject.appendChild(newP2);
+
+      let newP3 = document.createElement('p')
+      newP3.classList.add('justified');
+      newP3.innerText = 'Construccion en la ciudad de Garzon-Huila';
+      newCardProject.appendChild(newP3);
+
+      createdConstruction=1
+   
+    }
+  }
 
 
 

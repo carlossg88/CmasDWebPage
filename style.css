@@ -377,6 +377,23 @@ h2{
   transition: 0.5s;
 }
 
+.Container-Design-Construction img{
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Container-Design-Construction .POver{
+  position: relative;
+  margin-bottom: 0px;
+  top: -20%;
+  left: 0%;
+  background-color: var(--green1);
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
 .container-Architecture{
   margin-left: 10%;
   margin-right: 10%;
@@ -553,11 +570,13 @@ h2{
     background-color: rgba(0, 0, 0, 0.1) ;
     
   }
-
+  
   .profile-container{
     display: block;
   }
-
+  .Profile{
+    width: 90%;
+  }
 
   .paragraph-footer{
     text-align: center;
