@@ -125,6 +125,8 @@ const containerConstruction = document.querySelector('.container-Construction')
       // Newimage.onmouseout = 'this.src="./project_images/O1-1G.jpg"';
       
       newCardProject.appendChild(Newimage);
+
+   
       
 
       let newP2 = document.createElement('p')
