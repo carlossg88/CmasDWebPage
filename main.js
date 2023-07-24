@@ -26,11 +26,13 @@ function ShowArchiture(){
   console.log('click')
   ContainerAchitectureProy.classList.toggle('inactive');
   ContainerCivilEngProy.classList.add('inactive');
+  containerConstruction.classList.add('inactive')
 }
 function ShowCivilEng(){
   console.log('click')
   ContainerAchitectureProy.classList.add('inactive');
   ContainerCivilEngProy.classList.toggle('inactive');
+  containerConstruction.classList.add('inactive')
 }
 
 
@@ -57,8 +59,6 @@ function openFullImg(reference,reference2,reference3){
   classifcation = reference3
   pos = 1
   NumbImages = reference2
-
-
 }
 
 function NextImg(){
@@ -91,56 +91,62 @@ const containerConstruction = document.querySelector('.container-Construction')
 
 // I'm creating 3 construction database 
 
-
   var createdConstruction = 0
+  const arrayNames = ["Doña Vilma", "Blush Makeup", "Conjunto Cerrado Los Cedros"]
+  const arrayDescription = ['Construccion de vivienda en la ciudad de Garzon - Huila','Construccion de local comercial en la ciudad de Pitalito - Huila','Construcción de shut de basuras en la ciudad de Pitalito-Huila']
 
   function createConstruction(){
+    ContainerAchitectureProy.classList.add('inactive');
+    ContainerCivilEngProy.classList.add('inactive')
 
     containerConstruction.classList.toggle('inactive')
 
     if (createdConstruction==0){
 
-      let a ='onclick'
-      let b = ','
-      let c = 'openFullImg('
-      let d = '1,'
-      let e = '14,'
-      let f='"O")'
-      let g = '"'
-      console.log(b+c+d+e+f)
-      
-      // from here I need to create a for cicle 
-      let newCardProject = document.createElement('div');
-      newCardProject.classList.add('card-project');
-      
-      cardContainer.appendChild(newCardProject);
+      for (i = 0; i<= arrayNames.length-1; i++){
+        let cont = i+1
+        let a ='onclick'
+        let b = ','
+        let c = 'openFullImg('
+        let d = cont + ','
+        let e = '14,'
+        let f='"O")'
+        let g = '"'
+        
+        console.log(b+c+d+e+f)
+        
+        // from here I need to create a for cicle 
+        let newCardProject = document.createElement('div');
+        newCardProject.classList.add('card-project');
+        
+        cardContainer.appendChild(newCardProject);
 
-      let Newimage = document.createElement('img');
-      Newimage.src = 'project_images/O1-1G.jpg';
-      Newimage.setAttribute('onmouseover','src="project_images/O1-1.jpg"');
-      Newimage.setAttribute('onmouseout','src="project_images/O1-1G.jpg"');
-      Newimage.setAttribute(a , c+d+e+f)
+        let Newimage = document.createElement('img');
+        Newimage.src = 'project_images/O'+cont+'-1G.jpg';
+        Newimage.setAttribute('onmouseover','src="project_images/O'+cont+'-1.jpg"');
+        Newimage.setAttribute('onmouseout','src="project_images/O'+cont+'-1G.jpg"');
+        Newimage.setAttribute(a , c+d+e+f)
+        
+        // Newimage.onmouseover = 'this.src="./project_images/O1-1.jpg"';
+        // Newimage.onmouseout = 'this.src="./project_images/O1-1G.jpg"';
+        
+        newCardProject.appendChild(Newimage);
+
+    
+        let newP2 = document.createElement('p')
+        newP2.classList.add('bold');
+        newP2.innerText = arrayNames[i];
+        newCardProject.appendChild(newP2);
+
+        let newP3 = document.createElement('p')
+        newP3.classList.add('justified');
+        newP3.innerText = arrayDescription[i];
+        newCardProject.appendChild(newP3);
+
+        createdConstruction=1
       
-      // Newimage.onmouseover = 'this.src="./project_images/O1-1.jpg"';
-      // Newimage.onmouseout = 'this.src="./project_images/O1-1G.jpg"';
-      
-      newCardProject.appendChild(Newimage);
+      }
 
-   
-      
-
-      let newP2 = document.createElement('p')
-      newP2.classList.add('bold');
-      newP2.innerText = 'Casa de doña Vilma';
-      newCardProject.appendChild(newP2);
-
-      let newP3 = document.createElement('p')
-      newP3.classList.add('justified');
-      newP3.innerText = 'Construccion en la ciudad de Garzon-Huila';
-      newCardProject.appendChild(newP3);
-
-      createdConstruction=1
-   
     }
   }
 
