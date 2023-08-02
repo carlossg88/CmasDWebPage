@@ -660,5 +660,14 @@ h2{
     width: 50%;
   }
 
+  .footer{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .logo-footer{
+    width: 50%;
+    display: flex;
+    align-self: center;
+  }
 
 }
