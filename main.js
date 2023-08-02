@@ -2,12 +2,29 @@
 const menuHamIcon = document.querySelector('.menuIcon');
 const MobileMenu = document.querySelector('.navbar-right-mobile');
 
-
 menuHamIcon.addEventListener('click',toggleMobileMenu);
 
 function toggleMobileMenu(){
   MobileMenu.classList.toggle('inactive');
 }
+
+
+// FUNCTION FOR SERVICES
+
+const cardServices = document.getElementsByClassName('card-service');
+const apagado = document.getElementsByClassName('apagado')
+
+for(var i=0; i<cardServices.length; i++){
+  cardServices[i].addEventListener('click', myFunction)
+}
+
+function myFunction(e){
+  console.log(e.target.children[2].classList.toggle('inactive'))
+}
+
+
+
+
 
 // FUNCTIONS FOR PROJECTS
 

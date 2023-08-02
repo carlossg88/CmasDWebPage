@@ -183,14 +183,16 @@ h2{
 
 .footer{
   display: flex;
-  background-color: var(--green2);
+  background-color: white;
   justify-content: center;
-  color: var(--white);
+  color: var(--green1);
   font-size: 20px;
   font-weight: normal;
 }
 
 .logo-footer{
+  align-items: center;
+  justify-content: center;
   width: 15%;
   height: 15%;
   position: relative;
@@ -303,20 +305,28 @@ h2{
   text-align: justify;
   /* border: 3px solid var(--gray2); */
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card-service img{
   width: 100px;
   /* height: 50px; */
-  /* display: block; */
+  display:  block;
+  align-self: center;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--white);
+  
 }
 
 .card-service p{
   background-color: var(--white);
 }
+
+.card-service p:nth-child(3){
+  /* background-color: green; */
+}
+
 
 
 /* PROJECTS  */
@@ -335,6 +345,7 @@ h2{
   grid-template-columns: repeat(auto-fill,280px);
   gap: 50px;
   place-content: center;
+  margin-bottom: 50px;
 }
 
 .container-Design .bold{
