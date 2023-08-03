@@ -34,24 +34,51 @@ function myFunction(e){
 
 const Architecture = document.querySelector('.Container-Design-Architecture');
 const CivilEng = document.querySelector('.Container-Design-CivilEng');
+const Soil = document.querySelector('.Container-Design-Soil');
 
 const ContainerAchitectureProy = document.querySelector('.container-Architecture');
 const ContainerCivilEngProy = document.querySelector('.container-CivilEng');
+const ContainerSoil = document.querySelector('.container-Soil');
 
 Architecture.addEventListener('click', ShowArchiture);
 CivilEng.addEventListener('click',ShowCivilEng);
+Soil.addEventListener('click',ShowSoil);
 
 function ShowArchiture(){
   console.log('click')
   ContainerAchitectureProy.classList.toggle('inactive');
   ContainerCivilEngProy.classList.add('inactive');
   containerConstruction.classList.add('inactive')
+  ContainerSoil.classList.add('inactive')
+
+  // Architecture.classList.toggle('inactive')
+  CivilEng.classList.toggle('inactive')
+  Constructions.classList.toggle('inactive')
+  Soil.classList.toggle('inactive')
+  
 }
 function ShowCivilEng(){
   console.log('click')
   ContainerAchitectureProy.classList.add('inactive');
   ContainerCivilEngProy.classList.toggle('inactive');
   containerConstruction.classList.add('inactive')
+  ContainerSoil.classList.add('inactive')
+  
+  Architecture.classList.toggle('inactive')
+  // CivilEng.classList.toggle('inactive')
+  Constructions.classList.toggle('inactive')
+  Soil.classList.toggle('inactive')
+  
+}
+function ShowSoil(){
+  ContainerAchitectureProy.classList.add('inactive');
+  ContainerCivilEngProy.classList.add('inactive');
+  containerConstruction.classList.add('inactive')
+  ContainerSoil.classList.toggle('inactive')
+  Architecture.classList.toggle('inactive')
+  CivilEng.classList.toggle('inactive')
+  Constructions.classList.toggle('inactive')
+  // Soil.classList.toggle('inactive')
 }
 
 
@@ -119,6 +146,11 @@ const containerConstruction = document.querySelector('.container-Construction')
     ContainerCivilEngProy.classList.add('inactive')
 
     containerConstruction.classList.toggle('inactive')
+
+    Architecture.classList.toggle('inactive')
+    CivilEng.classList.toggle('inactive')
+    // Constructions.classList.toggle('inactive')
+    Soil.classList.toggle('inactive')
 
     if (createdConstruction==0){
 

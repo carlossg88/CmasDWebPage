@@ -203,6 +203,10 @@ h2{
 }
 
 .paragraph-footer{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
   margin-top: 5px;
   margin-left: 3%;
 }
@@ -396,6 +400,41 @@ h2{
   transition: 0.5s;
 }
 .Container-Design-Construction .POver{
+  position: relative;
+  margin-bottom: 0px;
+  top: -20%;
+  left: 0%;
+  background-color: var(--green1);
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.Container-Design-Soil .POver{
+  position: relative;
+  margin-bottom: 0px;
+  top: -20%;
+  left: 0%;
+  background-color: var(--green1);
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.Container-Design-Soil img{
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Container-Design-Soil img{
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Container-Design-Soil .POver{
   position: relative;
   margin-bottom: 0px;
   top: -20%;
@@ -607,6 +646,7 @@ h2{
 
   .paragraph-footer{
     text-align: center;
+    justify-content: center;
   }
   .paragraph-footer p{
     margin-top: 0px;
