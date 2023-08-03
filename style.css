@@ -20,7 +20,7 @@ h1{
   font-size: var(--vlg);
 }
 h2{
-  font-size: var(--lg);
+  font-size: var(--vlg);
 }
 .container{
   width: 100%;
@@ -565,6 +565,10 @@ h2{
     top: 46px;
     right: 0px;
     padding-left: 0px;
+    width: 15%;
+  }
+  .title{
+    font-size: var(--vlg);
   }
   .navbar-left{
     font-size: 10px;
@@ -578,7 +582,7 @@ h2{
     font-size: 20px;
   }
   .title-gray{
-    font-size: var(--md);
+    font-size: var(--vlg);
     padding-top: 0px;
     width: 20px;
     
