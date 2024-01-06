@@ -138,8 +138,8 @@ const containerConstruction = document.querySelector('.container-Construction')
 // I'm creating 3 construction database 
 
   var createdConstruction = 0
-  const arrayNames = ["Doña Vilma", "Blush Makeup", "Conjunto Cerrado Los Cedros", "Conjuto cerrado Torres de Almaguer","Coofisam Pitalito"]
-  const arrayDescription = ['Construccion de vivienda en la ciudad de Garzon - Huila','Construccion de local comercial en la ciudad de Pitalito - Huila','Construcción de shut de basuras en la ciudad de Pitalito-Huila','Construcción de portería, shut de basuras, construcción de zona e BBQ, pisos y cielo raso de zonas social en la ciudad de Pitalito-Huila','Remodelación de oficina principal en el Municipio de Pitalito- Huila. Diseño Arquitectónico y remodelación ']
+  const arrayNames = ["Doña Vilma", "Blush Makeup", "Conjunto Cerrado Los Cedros", "Conjuto cerrado Torres de Almaguer","Coofisam Pitalito","Picos con Cafe"]
+  const arrayDescription = ['Construccion de vivienda en la ciudad de Garzon - Huila','Construccion de local comercial en la ciudad de Pitalito - Huila','Construcción de shut de basuras en la ciudad de Pitalito-Huila','Construcción de portería, shut de basuras, construcción de zona e BBQ, pisos y cielo raso de zonas social en la ciudad de Pitalito-Huila','Remodelación de oficina principal en el Municipio de Pitalito- Huila. Diseño Arquitectónico y remodelación ', 'Remodelacion de Restaurante en el centro comercial Uniplaza ']
 
   function createConstruction(){
     ContainerAchitectureProy.classList.add('inactive');
@@ -165,7 +165,7 @@ const containerConstruction = document.querySelector('.container-Construction')
         let g = '"'
         
         console.log(b+c+d+e+f)
-        
+        console.log(arrayNames.length)
         // from here I need to create a for cicle 
         let newCardProject = document.createElement('div');
         newCardProject.classList.add('card-project');
